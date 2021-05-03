@@ -1,0 +1,52 @@
+<header class="fixed-top">
+    <nav class="navbar navbar-light bg-light">
+
+        <!-- BOTAO DO MENU-->
+        <a class="navbar-brand">
+            <i 
+                tabindex="0" 
+                (keyup.space)="menu.toggle()" 
+                (click)="menu.toggle()" 
+                class="fa fa-bars mr-2"
+            ></i>
+            ALURAPIC
+        </a>
+
+        <!-- MENU -->
+        <app-menu #menu>
+            <ul class="list-unstyled">
+                <li>
+                    <a showIfLogged [routerLink]="['p', 'add']">Upload</a>
+                </li>
+            </ul>
+        </app-menu>
+
+        <!-- NOME DO USUARIO LOGADO E LINK DE LOGOUT -->
+        <!-- EXIBIDO SOMENTE SE USUARIO ESTIVER LOGADO -->
+        <div *ngIf="(user$ | async) as user; else login">
+            <i class="fa fa-user-circle mr-1"></i>
+            <a class="mr-1">{{user.name}}</a>
+            <a (click)="logout()">(Logout)</a>
+        </div>
+
+        <!-- LINK DE LOGIN -->
+        <!-- EXIBIDO SOMENTE SE USUARIO NÃO ESTIVER LOGADO -->
+        <ng-template #login>
+            <span class="navbar-text">
+                <a routerLink="/" routerLinkActive="active">Please, login!</a>
+            </span>
+        </ng-template>
+
+    </nav>
+
+    <div class="fixed-top">
+
+        <!-- BARRA DE STATUS DO CARREGAMENTO DA VIEW -->
+        <app-loading></app-loading>
+
+        <!-- CONTAINER DE MENSAGENS -->
+        <app-alert></app-alert>
+        
+    </div>
+
+</header>
