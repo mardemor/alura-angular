@@ -45,5 +45,6 @@
   <li>Para instalar os modulos do node.js no projeto, abra consoles nas pastas "alurapic", "api" e "log-server" e execute o comando "npm install" em cada um.</li>
   <li>Para subir os servidores, abra consoles nas pastas "api" e "log-server" e execute o comando "npm start" em cada um. Os servidores escutam nas portas 3000 e 7000 respectivamente.</li>
   <li>Para executar o projeto abra o console na pasta "alurapic" e execute o comando ng serve --open.</li>
+  <li>Usuários para login são exibidos no console "api".</li>
 </ul>
  
