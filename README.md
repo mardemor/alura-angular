@@ -1,4 +1,4 @@
-# Curso Alura Typescript
+# Curso Alura Angular
 
 <p>Projeto desenvolvido como parte do curso <b>Angular</b> da escola <a href="https://www.alura.com.br/">Alura</a>, ministrado pelo professor Flavio Almeida.</p>
 <p>O curso teve carga horária de 50 horas e está dividido em 4 módulos:</p>
@@ -41,7 +41,7 @@
 <h3>Para rodar o projeto</h3>
 <ul>
   <li>Necessário o node.js e o Angular CLI.</li>
-  <li>Baixe e descompacte o <a href="***">arquivo zipado</a>.</li>
+  <li>Baixe e descompacte o <a href="https://github.com/mardemor/alura-angular/archive/refs/tags/v1.0.zip">arquivo zipado</a>.</li>
   <li>Para instalar os modulos do node.js no projeto, abra consoles nas pastas "alurapic", "api" e "log-server" e execute o comando "npm install" em cada um.</li>
   <li>Para subir os servidores, abra consoles nas pastas "api" e "log-server" e execute o comando "npm start" em cada um. Os servidores escutam nas portas 3000 e 7000 respectivamente.</li>
   <li>Para executar o projeto abra o console na pasta "alurapic" e execute o comando ng serve --open.</li>
